@@ -86,7 +86,7 @@ export default function Header() {
           >
             &times;
           </button>
-          <a href="#" className="block py-2 text-center">
+          <a href="/" className="block py-2 text-center">
             Home
           </a>
           <a href="#services" onClick={(e) => handleScrollToSection(e, '#services')} className="block py-2 text-center">
