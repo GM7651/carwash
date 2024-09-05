@@ -61,7 +61,7 @@ export default function Header() {
             </button>
           </div>
           <nav className="hidden lg:flex space-x-6">
-            <a href="#" className="text-lg text-gray-800 dark:text-white uppercase">
+            <a href="/" className="text-lg text-gray-800 dark:text-white uppercase">
               Home
             </a>
             <a href="#services" onClick={(e) => handleScrollToSection(e, '#services')} className="text-lg text-gray-800 dark:text-white uppercase">

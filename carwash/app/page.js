@@ -1,9 +1,10 @@
 import Image from 'next/image';
-import Header from '../components/headerr';
+import Header from '../components/headerr'; // Correct path for headerr.js
 import Footer from '../components/footer';
+
 import Pricing from '../components/pricing';
 import PricingTint from '../components/pricingtint';
-import PricingPaint from '../components/pricingpaint';
+import PricingPaint from '../components/pricingpaint'; // Import the PricingPaint component
 
 import '../styles/globals.css';
 
@@ -74,7 +75,7 @@ export default function Home() {
 
         <Pricing />
         <PricingTint />
-        <PricingPaint />
+        <PricingPaint /> {/* Make sure this is correctly imported */}
 
         <section className="bg-white">
     <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">

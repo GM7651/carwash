@@ -29,7 +29,7 @@ export default function Footer() {
             height={30}
           />
         </Link>
-        <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <Link href="https://www.instagram.com/shinecityautospa/" target="_blank" rel="noopener noreferrer">
           <Image
             src="https://img.icons8.com/fluent/30/000000/instagram-new.png"
             alt="Instagram"
