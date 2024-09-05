@@ -13,18 +13,15 @@ function PricingPaint() {
 
   return (
     <div>
-      <section
-         className="h-full bg-black dark:bg-black px-2"
-      >
+      <section className="h-full bg-black dark:bg-black px-2">
         <div className="container px-8 py-8 mx-auto">
           <button
             onClick={toggleDropdown}
             className="w-full px-4 py-8 text-4xl tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]"
-            >
+          >
             {isOpen ? 'Hide Pricing' : 'Paint Services Pricing'}
           </button>
           {isOpen && (
-
             <div className="grid gap-6 mt-16 -mx-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
               {/* First Pricing Card */}
               <div className="px-8 py-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
@@ -35,7 +32,7 @@ function PricingPaint() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim's</li>
+                      <li>Rim&apos;s</li> {/* Escaped single quote */}
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -67,7 +64,7 @@ function PricingPaint() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim's</li>
+                      <li>Rim&apos;s</li> {/* Escaped single quote */}
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -111,7 +108,7 @@ function PricingPaint() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim's</li>
+                      <li>Rim&apos;s</li> {/* Escaped single quote */}
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -143,7 +140,7 @@ function PricingPaint() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim's</li>
+                      <li>Rim&apos;s</li> {/* Escaped single quote */}
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>

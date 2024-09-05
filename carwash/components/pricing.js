@@ -14,24 +14,22 @@ function Pricing() {
   return (
     <div>
       <section
-         className="h-full bg-black dark:bg-black px-2"
+        className="h-full bg-black dark:bg-black px-2"
       >
         <div className="container px-8 py-8 mx-auto">
           <button
             onClick={toggleDropdown}
             className="w-full px-4 py-8 text-4xl tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]"
-            >
+          >
             {isOpen ? 'Hide Pricing' : 'Car Wash Pricing'}
           </button>
           {isOpen && (
-
             <div className="grid gap-6 mt-16 -mx-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
               {/* First Pricing Card */}
-        
               <div className="px-8 py-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
-              <p class="mono text-sm absolute -top-4 bg-red-400 text-zinc-100 py-0.5 px-2 font-bold tracking-wider rounded">
-                 POPULAR
-              </p>
+                <p className="mono text-sm absolute -top-4 bg-red-400 text-zinc-100 py-0.5 px-2 font-bold tracking-wider rounded">
+                  POPULAR
+                </p>
                 <p className="text-lg font-medium text-white dark:text-gray-100">Full Wash</p>
                 <h4 className="mt-2 text-5xl font-semibold text-white dark:text-gray-100">$30</h4>
                 <p className="mt-4 text-xs text-white dark:text-gray-300">Non-Refundable</p>
@@ -39,7 +37,7 @@ function Pricing() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim's</li>
+                      <li>Rim&apos;s</li> {/* Fixed */}
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -57,7 +55,7 @@ function Pricing() {
                     </ul>
                   </div>
                 </div>
-                <button   className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
+                <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
                   Choose plan
                 </button>
               </div>
@@ -71,7 +69,7 @@ function Pricing() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim's</li>
+                      <li>Rim&apos;s</li> {/* Fixed */}
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -79,7 +77,7 @@ function Pricing() {
                     </ul>
                   </div>
                 </div>
-                <button   className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
+                <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
                   Choose plan
                 </button>
               </div>
@@ -101,7 +99,7 @@ function Pricing() {
                     </ul>
                   </div>
                 </div>
-                <button   className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
+                <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
                   Choose plan
                 </button>
               </div>
@@ -115,7 +113,7 @@ function Pricing() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim's</li>
+                      <li>Rim&apos;s</li> {/* Fixed */}
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -133,7 +131,7 @@ function Pricing() {
                     </ul>
                   </div>
                 </div>
-                <button   className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
+                <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
                   Choose plan
                 </button>
               </div>
@@ -147,7 +145,7 @@ function Pricing() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim's</li>
+                      <li>Rim&apos;s</li> {/* Fixed */}
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -155,7 +153,7 @@ function Pricing() {
                     </ul>
                   </div>
                 </div>
-                <button   className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
+                <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
                   Choose plan
                 </button>
               </div>
@@ -177,7 +175,7 @@ function Pricing() {
                     </ul>
                   </div>
                 </div>
-                <button   className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
+                <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
                   Choose plan
                 </button>
               </div>
