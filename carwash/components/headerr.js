@@ -106,11 +106,11 @@ export default function Header() {
           <div className="sm:w-2/3 lg:w-2/5 flex flex-col relative z-20">
             <span className="w-20 h-2 bg-gray-800 dark:bg-white mb-12"></span>
             <h1 className="font-bebas-neue uppercase text-6xl sm:text-8xl font-black flex flex-col leading-none dark:text-white text-gray-800">
-              Car wash
-              <span className="text-5xl sm:text-7xl">Name</span>
+              Shine City
+<span className="text-5xl sm:text-7xl bg-gradient-to-r from-indigo-400 via-blue-400 to-pink-400 text-transparent bg-clip-text">Auto Spa</span>
             </h1>
             <p className="text-sm sm:text-base text-gray-700 mt-4 dark:text-white">
-              [Car Shop Name] is your one-stop destination for premium automotive care. Specializing in professional window tinting, car wash services, and a range of additional services, including detailing, paint protection, and minor repairs, all aimed at keeping your vehicle in pristine condition.
+              Shine City Auto Spa is your one-stop destination for premium automotive care. Specializing in professional window tinting, car wash services, and a range of additional services, including detailing, paint protection, and minor repairs, all aimed at keeping your vehicle in pristine condition.
             </p>
             <div className="flex mt-10">
               <a

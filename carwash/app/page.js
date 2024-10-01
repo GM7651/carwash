@@ -22,7 +22,7 @@ export default function Home() {
               <div className="p-6">
                 <Image
                   className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                  src="/carwash.jpg"
+                  src="/show-case-1.webp"
                   alt="Our Goal"
                   width={300}
                   height={200}
@@ -39,7 +39,7 @@ export default function Home() {
               <div className="p-6">
                 <Image
                   className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                  src="/carwash.jpg"
+                  src="/show-case-2.webp"
                   alt="Our Services"
                   width={300}
                   height={200}
@@ -56,7 +56,7 @@ export default function Home() {
               <div className="p-6">
                 <Image
                   className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                  src="/carwash.jpg"
+                  src="/show-case-3.webp"
                   alt="More Info"
                   width={300}
                   height={200}
