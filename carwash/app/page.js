@@ -13,10 +13,10 @@ export default function Home() {
     <>
       <Header />
       
-      <div className="bg-white">
+      <div id="services" className="bg-white">
         <h1 className="flex text-center justify-center font-bold text-5xl mt-8">Our Services</h1>
 
-        <section>
+        <section id="contact">
           <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
             <div className="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
               <div className="p-6">
@@ -28,7 +28,7 @@ export default function Home() {
                   height={200}
                   style={{ width: '100%', height: 'auto' }}
                   />
-                <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Our Goal</h1>
+                <h1 className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Our Goal</h1>
                 <p className="mx-auto text-base leading-relaxed text-gray-500">
                   At car wash NYC, our commitment is to deliver top-tier car services that go beyond your expectations. 
                   We strive to make your vehicle look as pristine as the day it left the showroom.
@@ -45,7 +45,7 @@ export default function Home() {
                   height={200}
                   style={{ width: '100%', height: 'auto' }}
                   />
-                <h1 id="services" className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Our Services</h1>
+                <h1 id="services" className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Our Services</h1>
                 <p className="mx-auto text-base leading-relaxed text-gray-500">
                   We provide an extensive array of car detailing services, including exterior and interior detailing, paint correction, and ceramic coating. Our team of professionals utilizes 
                  top-quality products and advanced techniques to ensure your car achieves its finest appearance.
@@ -62,12 +62,12 @@ export default function Home() {
                   height={200}
                   style={{ width: '100%', height: 'auto' }}
                   />
-                <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">More Information</h1>
+                <h1 className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">More Information</h1>
                 <p className="mx-auto text-base leading-relaxed text-gray-500">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Stay Shiny! Sign up for exclusive deals, expert car care tips, and be the first to know about our special offers. Your car deserves the best! 
                 </p>
-                <a href="#" className="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more">Read More »</a>
+                
+                <a href="#" className="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more">Sign Up »</a>
               </div>
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
           ></iframe>
 </div>
                 <div>
-                    <div className="max-w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div  className="max-w-full mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
                         <div className="px-6 py-4">
                             <h3 className="text-lg font-medium text-gray-900">Our Address</h3>
                             <p className="mt-1 text-gray-600">73 Thompson St, Staten Island, NY 10304</p>
