@@ -15,8 +15,29 @@ export default function AppointmentForm() {
   const [time, setTime] = useState('');
   const [message, setMessage] = useState('');
 
-  // Example time slots
-  const [timeSlots] = useState(['9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM']);
+  // Function to generate time slots at 30-minute intervals
+  const generateTimeSlots = (startHour, startMinute, endHour, endMinute) => {
+    const times = [];
+    let currentTime = new Date();
+    currentTime.setHours(startHour, startMinute, 0, 0); // Set start time (8:30 AM)
+
+    const endTime = new Date();
+    endTime.setHours(endHour, endMinute, 0, 0); // Set end time (8:30 PM)
+
+    while (currentTime <= endTime) {
+      const hours = currentTime.getHours();
+      const minutes = currentTime.getMinutes();
+      const ampm = hours >= 12 ? 'PM' : 'AM';
+      const formattedTime = `${(hours % 12 || 12)}:${minutes < 10 ? '0' + minutes : minutes} ${ampm}`;
+      times.push(formattedTime);
+      currentTime.setMinutes(currentTime.getMinutes() + 30); // Add 30 minutes
+    }
+
+    return times;
+  };
+
+  // Generate the time slots from 8:30 AM to 8:30 PM
+  const timeSlots = generateTimeSlots(8, 30, 20, 30);
 
   // Generate the next 7 days as date options
   const getNext7Days = () => {
