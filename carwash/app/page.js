@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Header from '../components/headerr'; // Correct path for headerr.js
+import Header from '../components/headerr'; 
 import Footer from '../components/footer';
 
 import Pricing from '../components/pricing';
@@ -16,18 +16,22 @@ export default function Home() {
       <div id="services" className="bg-white">
         <h1 className="flex text-center justify-center font-bold text-5xl mt-8">Our Services</h1>
 
-        <section id="contact">
+        <section >
           <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-24 max-w-7xl">
             <div className="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
               <div className="p-6">
-                <Image
-                  className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                  src="/show-case-1.webp"
-                  alt="Our Goal"
-                  width={300}
-                  height={200}
-                  style={{ width: '100%', height: 'auto' }}
-                  />
+              <video
+            className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+            autoPlay
+            loop
+            muted
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+              >
+              <source src="/video_2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+              </video>
                 <h1 className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Our Goal</h1>
                 <p className="mx-auto text-base leading-relaxed text-gray-500">
                   At car wash NYC, our commitment is to deliver top-tier car services that go beyond your expectations. 
@@ -37,14 +41,18 @@ export default function Home() {
               </div>
               
               <div className="p-6">
-                <Image
-                  className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                  src="/show-case-2.webp"
-                  alt="Our Services"
-                  width={300}
-                  height={200}
-                  style={{ width: '100%', height: 'auto' }}
-                  />
+              <video
+            className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+            autoPlay
+            loop
+            muted
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+              >
+              <source src="/video_1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+              </video>
                 <h1 id="services" className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Our Services</h1>
                 <p className="mx-auto text-base leading-relaxed text-gray-500">
                   We provide an extensive array of car detailing services, including exterior and interior detailing, paint correction, and ceramic coating. Our team of professionals utilizes 
@@ -54,14 +62,18 @@ export default function Home() {
               </div>
 
               <div className="p-6">
-                <Image
-                  className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-                  src="/show-case-3.webp"
-                  alt="More Info"
-                  width={300}
-                  height={200}
-                  style={{ width: '100%', height: 'auto' }}
-                  />
+              <video
+            className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+            autoPlay
+            loop
+            muted
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+              >
+              <source src="/video_1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+              </video>
                 <h1 className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">More Information</h1>
                 <p className="mx-auto text-base leading-relaxed text-gray-500">
                 Stay Shiny! Sign up for exclusive deals, expert car care tips, and be the first to know about our special offers. Your car deserves the best! 
@@ -75,7 +87,7 @@ export default function Home() {
 
         <Pricing />
         <PricingTint />
-        <PricingPaint /> {/* Make sure this is correctly imported */}
+        <PricingPaint /> 
 
         <section className="bg-white">
     <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
@@ -105,14 +117,14 @@ export default function Home() {
                         </div>
                         <div className="border-t border-gray-200 px-6 py-4">
                             <h3 className="text-lg font-medium text-gray-900">Hours</h3>
-                            <p className="mt-1 text-gray-600">Monday - Friday: 9am - 5pm</p>
-                            <p className="mt-1 text-gray-600">Saturday: 10am - 4pm</p>
+                            <p className="mt-1 text-gray-600">Monday - Friday: 8am - 8pm</p>
+                            <p className="mt-1 text-gray-600">Saturday: 8am - 8pm</p>
                             <p className="mt-1 text-gray-600">Sunday: Closed</p>
                         </div>
                         <div className="border-t border-gray-200 px-6 py-4">
                             <h3 className="text-lg font-medium text-gray-900">Contact</h3>
                             <p className="mt-1 text-gray-600">Email: gangsta@gangsta.com</p>
-                            <p className="mt-1 text-gray-600">Phone: +1 234 765 1111</p>
+                            <p className="mt-1 text-gray-600">Phone: 346-520-0211</p>
                         </div>
                     </div>
                 </div>

@@ -57,8 +57,7 @@ function Pricing() {
                 </div>
           <Link href="/Appointment">
             <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
-              Choose plan
-            </button>
+Comming Soon             </button>
          </Link>
               </div>
 
@@ -80,8 +79,7 @@ function Pricing() {
                   </div>
                 </div>
                 <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
-                  Choose plan
-                </button>
+    Comming Soon                 </button>
               </div>
 
               {/* Third Pricing Card */}
@@ -102,8 +100,7 @@ function Pricing() {
                   </div>
                 </div>
                 <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
-                  Choose plan
-                </button>
+    Comming Soon                 </button>
               </div>
 
               {/* Fourth Pricing Card */}
@@ -134,8 +131,7 @@ function Pricing() {
                   </div>
                 </div>
                 <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
-                  Choose plan
-                </button>
+    Comming Soon                 </button>
               </div>
 
               {/* Fifth Pricing Card */}
@@ -156,8 +152,7 @@ function Pricing() {
                   </div>
                 </div>
                 <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
-                  Choose plan
-                </button>
+    Comming Soon                 </button>
               </div>
 
               {/* Sixth Pricing Card */}
@@ -178,8 +173,7 @@ function Pricing() {
                   </div>
                 </div>
                 <button className="w-full sm:w-auto px-8 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]">
-                  Choose plan
-                </button>
+    Comming Soon                 </button>
               </div>
             </div>
           )}

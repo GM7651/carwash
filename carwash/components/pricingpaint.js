@@ -23,7 +23,7 @@ function PricingPaint() {
           </button>
           {isOpen && (
             <div className="grid gap-6 mt-16 -mx-6 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-              {/* First Pricing Card */}
+              {/* First Pricing Card 
               <div className="px-8 py-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
                 <p className="text-lg font-medium text-white dark:text-gray-100">Full Wash</p>
                 <h4 className="mt-2 text-5xl font-semibold text-white dark:text-gray-100">$30</h4>
@@ -32,7 +32,8 @@ function PricingPaint() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim&apos;s</li> {/* Escaped single quote */}
+
+                      <li>Rim&apos;s</li> 
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -55,7 +56,7 @@ function PricingPaint() {
                 </button>
               </div>
 
-              {/* Second Pricing Card */}
+             
               <div className="px-8 py-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
                 <p className="text-lg font-medium text-white dark:text-gray-100">Exterior Only</p>
                 <h4 className="mt-2 text-5xl font-semibold text-white dark:text-gray-100">$25</h4>
@@ -64,7 +65,8 @@ function PricingPaint() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim&apos;s</li> {/* Escaped single quote */}
+                      <li>Rim&apos;s</li> 
+
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -77,7 +79,7 @@ function PricingPaint() {
                 </button>
               </div>
 
-              {/* Third Pricing Card */}
+              
               <div className="px-8 py-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
                 <p className="text-lg font-medium text-white dark:text-gray-100">Interior Wash</p>
                 <h4 className="mt-2 text-5xl font-semibold text-white dark:text-gray-100">$25</h4>
@@ -99,7 +101,7 @@ function PricingPaint() {
                 </button>
               </div>
 
-              {/* Fourth Pricing Card */}
+              
               <div className="px-8 py-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
                 <p className="text-lg font-medium text-white dark:text-gray-100">Extended vehicle - Full Wash</p>
                 <h4 className="mt-2 text-5xl font-semibold text-white dark:text-gray-100">$35</h4>
@@ -108,7 +110,7 @@ function PricingPaint() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim&apos;s</li> {/* Escaped single quote */}
+                      <li>Rim&apos;s</li> 
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -131,7 +133,7 @@ function PricingPaint() {
                 </button>
               </div>
 
-              {/* Fifth Pricing Card */}
+              
               <div className="px-8 py-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
                 <p className="text-lg font-medium text-white dark:text-gray-100">Extended vehicle - Exterior Wash</p>
                 <h4 className="mt-2 text-5xl font-semibold text-white dark:text-gray-100">$30</h4>
@@ -140,7 +142,7 @@ function PricingPaint() {
                   <div className="flex flex-col">
                     <span className="text-gray-400 font-semibold dark:text-gray-300">Exterior Wash</span>
                     <ul className="mt-1 text-white text-sm list-disc list-inside">
-                      <li>Rim&apos;s</li> {/* Escaped single quote */}
+                      <li>Rim&apos;s</li> 
                       <li>Foam Wash</li>
                       <li>Air Dry</li>
                       <li>Spray Wax</li>
@@ -153,7 +155,7 @@ function PricingPaint() {
                 </button>
               </div>
 
-              {/* Sixth Pricing Card */}
+              
               <div className="px-8 py-8 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-opacity-20 duration-200 transform rounded-lg">
                 <p className="text-lg font-medium text-white dark:text-gray-100">Extended vehicle - Interior Wash</p>
                 <h4 className="mt-2 text-5xl font-semibold text-white dark:text-gray-100">$30</h4>
@@ -174,9 +176,23 @@ function PricingPaint() {
                   Choose plan
                 </button>
               </div>
+            */}
+<div class="w-full min-h-screen bg-black flex items-center justify-center">
+    <div class="max-w-2xl w-full px-9 text-center">
+        <h1 class="text-4xl  sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-white">
+            Coming Soon!
+        </h1>
+        <p class="text-lg sm:text-xl md:text-2xl text-gray-300 mb-12">
+            Web page is under construction. We'll be back soon!
+        </p>
+    </div>
+</div>
+
+
             </div>
           )}
         </div>
+        
       </section>
     </div>
   );

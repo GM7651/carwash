@@ -51,7 +51,7 @@ export default function Header() {
     <main className="dark:bg-black bg-white relative overflow-hidden h-screen">
       <header className="h-24 sm:h-32 flex items-center z-30 w-full">
         <div className="container mx-auto px-6 flex items-center justify-between">
-          <div className="uppercase text-black dark:text-white font-black text-3xl flex items-center relative z-20">
+          <div className="uppercase  text-black dark:text-white font-black text-3xl flex items-center relative z-20">
            <Image
             src="/carwash3.png"
             alt="Logo"
@@ -85,26 +85,48 @@ export default function Header() {
           </nav>
         </div>
         <nav
-          className={`lg:hidden font-sen text-gray-800 dark:text-white uppercase text-lg fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10/12 p-4 bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-80 rounded-lg shadow-lg z-50 ${isOpen ? 'block' : 'hidden'}`}
+          className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform ${
+            isOpen ? "translate-x-0" : "-translate-x-full"
+          } bg-white bg-opacity-80 dark:bg-black dark:bg-opacity-80 shadow-lg sm:hidden`}
         >
-          <button 
-            className="absolute top-2 right-2 text-gray-800 dark:text-white text-2xl font-bold" 
-            onClick={toggleMenu}
-          >
-            &times;
-          </button>
-          <a href="/" className="block py-2 text-center">
-            Home
-          </a>
-          <a href="#services" onClick={(e) => handleScrollToSection(e, '#services')} className="block py-2 text-center">
-            Services
-          </a>
-          <a href="#contact" onClick={(e) => handleScrollToSection(e, '#contact')} className="block py-2 text-center">
-            Contact
-          </a>
-          <a href="#" className="block py-2 text-center">
-            Learn More
-          </a>
+          <div className="h-full px-3 py-4 overflow-y-auto">
+            <button
+              className="absolute top-2 right-2 text-gray-800 dark:text-white text-2xl font-bold"
+              onClick={toggleMenu}
+            >
+              &times;
+            </button>
+            <ul className="space-y-2 font-medium">
+              <li>
+                <a href="/" className="block py-2 text-center text-gray-900 dark:text-white">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  onClick={(e) => handleScrollToSection(e, "#services")}
+                  className="block py-2 text-center text-gray-900 dark:text-white"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  onClick={(e) => handleScrollToSection(e, "#contact")}
+                  className="block py-2 text-center text-gray-900 dark:text-white"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#" className="block py-2 text-center text-gray-900 dark:text-white">
+                  Learn More
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
 
@@ -118,20 +140,20 @@ export default function Header() {
             <p className="text-sm sm:text-base text-gray-700 mt-4 dark:text-white">
               Shine City Auto Spa is your one-stop destination for premium automotive care. Specializing in professional window tinting, car wash services, and a range of additional services, including detailing, paint protection, and minor repairs, all aimed at keeping your vehicle in pristine condition.
             </p>
-            <div className="flex mt-10">
-              <a
-                href="#"
-                className="w-full sm:w-auto px-4 sm:px-6 py-4 sm:py-6 text-2xl sm:text-3xl md:text-4xl tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]"
-              >
-                Get started
-              </a>
-              <a
-                href="#"
-                className="w-full ml-1 sm:w-auto px-4 sm:px-6 py-4 sm:py-6 text-2xl sm:text-3xl md:text-4xl tracking-wide text-white capitalize transition-colors duration-200 transform rounded-md focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] animate-shimmer hover:bg-[#62f7fe]"
-              >
-                Read more
-              </a>
-            </div>
+            <div className="w-full -mt-72 min-h-screen flex flex-col items-center justify-center space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4">
+            <a
+              href="/Appointment"
+              className="inline-block w-full sm:w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400"
+            >
+              Book Appointment
+            </a>
+            <a
+              href="#"
+              className="inline-block w-full sm:w-auto text-center min-w-[200px] px-6 py-4 text-white transition-all rounded-md shadow-xl bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400"
+            >
+              Read more
+            </a>
+          </div>
           </div>
           <div className="ml-28 hidden sm:block sm:w-1/3 lg:w-1/2 relative">
             <Image
