@@ -21,20 +21,21 @@ export default function Home() {
             <div className="grid w-full grid-cols-1 gap-6 mx-auto lg:grid-cols-3">
               <div className="p-6">
               <video
-            className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-            autoPlay
-            loop
-            muted
-            width={300}
-            height={200}
-            style={{ width: '100%', height: 'auto' }}
-              >
-              <source src="/video_2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-              </video>
+                className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={300}
+                height={200}
+                style={{ width: '100%', height: 'auto' }}
+>             
+                <source src="/video_2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+                </video>
                 <h1 className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Our Goal</h1>
                 <p className="mx-auto text-base leading-relaxed text-gray-500">
-                  At car wash NYC, our commitment is to deliver top-tier car services that go beyond your expectations. 
+                  At ShineCity, our commitment is to deliver top-tier car services that go beyond your expectations. 
                   We strive to make your vehicle look as pristine as the day it left the showroom.
                 </p>
                 <a href="#" className="inline-flex items-center mt-4 font-semibold text-blue-600 lg:mb-0 hover:text-neutral-600" title="read more">Read More »</a>
@@ -42,17 +43,18 @@ export default function Home() {
               
               <div className="p-6">
               <video
-            className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-            autoPlay
-            loop
-            muted
-            width={300}
-            height={200}
-            style={{ width: '100%', height: 'auto' }}
-              >
-              <source src="/video_1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-              </video>
+                className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={300}
+                height={200}
+                style={{ width: '100%', height: 'auto' }}
+>             
+                <source src="/video_1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+                </video>
                 <h1 id="services" className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">Our Services</h1>
                 <p className="mx-auto text-base leading-relaxed text-gray-500">
                   We provide an extensive array of car detailing services, including exterior and interior detailing, paint correction, and ceramic coating. Our team of professionals utilizes 
@@ -63,17 +65,18 @@ export default function Home() {
 
               <div className="p-6">
               <video
-            className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
-            autoPlay
-            loop
-            muted
-            width={300}
-            height={200}
-            style={{ width: '100%', height: 'auto' }}
-              >
-              <source src="/video_3.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-              </video>
+                className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
+                autoPlay
+                loop
+                muted
+                playsInline
+                width={300}
+                height={200}
+                style={{ width: '100%', height: 'auto' }}
+>             
+                <source src="/video_3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+                </video>
                 <h1 className="mx-auto mb-4 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">More Information</h1>
                 <p className="mx-auto text-base leading-relaxed text-gray-500">
                 Stay Shiny! Sign up for exclusive deals, expert car care tips, and be the first to know about our special offers. Your car deserves the best! 
@@ -123,7 +126,7 @@ export default function Home() {
                         </div>
                         <div className="border-t border-gray-200 px-6 py-4">
                             <h3 className="text-lg font-medium text-gray-900">Contact</h3>
-                            <p className="mt-1 text-gray-600">Email: gangsta@gangsta.com</p>
+                            <p className="mt-1 text-gray-600">Email: 1shinecityautospa@gmail.com</p>
                             <p className="mt-1 text-gray-600">Phone: 346-520-0211</p>
                         </div>
                     </div>

@@ -60,7 +60,7 @@ export default function Footer() {
 
 
       
-      <p className="text-center  text-gray-700 font-medium">&copy; 2024 Car Wash  All rights reserved.</p>
+      <p className="text-center  text-gray-700 font-medium">&copy; 2024 ShineCity LLC  All rights reserved.</p>
     </footer>
   );
 }

@@ -1,12 +1,11 @@
-// firebase.js
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore"; // Firestore SDK
-import { getDatabase } from "firebase/database"; // Realtime Database SDK
-import { getAuth } from "firebase/auth"; // Firebase Auth (optional)
-import { getAnalytics, isSupported } from "firebase/analytics"; // Firebase Analytics
+import { getFirestore } from "firebase/firestore";
+import { getDatabase } from "firebase/database";
+import { getAuth } from "firebase/auth";
+import { getAnalytics, isSupported } from "firebase/analytics";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyB0Wp-DZHfE80k6E60Cxt9ziTT8TnxyVb8",
+  apiKey: "AIzaSyB0Wp-DZHfE80k6E60Cxt9ziTT8TnxyVb8", 
   authDomain: "shinecity-form.firebaseapp.com",
   databaseURL: "https://shinecity-form-default-rtdb.firebaseio.com",
   projectId: "shinecity-form",
@@ -19,18 +18,20 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Export Firestore instance
-const firestore = getFirestore(app); // Firestore instance
-const realtimeDatabase = getDatabase(app); // Realtime Database instance
-const auth = getAuth(app); // Firebase Auth (optional)
+// Initialize Firestore, Realtime Database, and Auth
+const firestore = getFirestore(app);
+const realtimeDatabase = getDatabase(app);
+const auth = getAuth(app);
 
-// Initialize Analytics (only if supported and in the browser environment)
+// Initialize Analytics (only in supported environments)
 let analytics = null;
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined") {
   isSupported().then((supported) => {
     if (supported) {
       analytics = getAnalytics(app);
     }
+  }).catch((error) => {
+    console.log("Analytics not supported in this environment:", error);
   });
 }
 

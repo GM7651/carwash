@@ -1,28 +1,36 @@
-'use client';
+'use client'; // Add this at the top to indicate client-side code
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react'; // Add useEffect and useRef
 import { collection, addDoc } from 'firebase/firestore'; // Firestore functions
-import { firestore, realtimeDatabase } from '../../firebase'; // Correct path to your firebase.js
+import { firestore } from '../../firebase'; // Correct path to your firebase.js
 
 import Header from '../../components/headerr'; // Update the path if necessary
 import Footer from '../../components/footer'; // Update the path if necessary
 
 export default function AppointmentForm() {
+  const formRef = useRef(null); // Create a ref for the form
+
+  // Scroll to form on page load
+  useEffect(() => {
+    if (formRef.current) {
+      formRef.current.scrollIntoView({ behavior: 'smooth' }); // Smooth scroll to the form
+    }
+  }, []); // Empty dependency array ensures this runs only once on mount
+
   // Form field states
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [date, setDate] = useState(''); // Initialize as an empty string
+  const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [message, setMessage] = useState('');
 
-  // Function to generate time slots at 30-minute intervals
   const generateTimeSlots = (startHour, startMinute, endHour, endMinute) => {
     const times = [];
     let currentTime = new Date();
-    currentTime.setHours(startHour, startMinute, 0, 0); // Set start time (8:30 AM)
+    currentTime.setHours(startHour, startMinute, 0, 0); 
 
     const endTime = new Date();
-    endTime.setHours(endHour, endMinute, 0, 0); // Set end time (8:30 PM)
+    endTime.setHours(endHour, endMinute, 0, 0); 
 
     while (currentTime <= endTime) {
       const hours = currentTime.getHours();
@@ -30,16 +38,14 @@ export default function AppointmentForm() {
       const ampm = hours >= 12 ? 'PM' : 'AM';
       const formattedTime = `${(hours % 12 || 12)}:${minutes < 10 ? '0' + minutes : minutes} ${ampm}`;
       times.push(formattedTime);
-      currentTime.setMinutes(currentTime.getMinutes() + 30); // Add 30 minutes
+      currentTime.setMinutes(currentTime.getMinutes() + 30); 
     }
 
     return times;
   };
 
-  // Generate the time slots from 8:30 AM to 8:30 PM
   const timeSlots = generateTimeSlots(8, 30, 20, 30);
 
-  // Generate the next 7 days as date options
   const getNext7Days = () => {
     const dates = [];
     const today = new Date();
@@ -47,9 +53,8 @@ export default function AppointmentForm() {
       const nextDate = new Date(today);
       nextDate.setDate(today.getDate() + i);
 
-      // Custom date format: MM/DD/YYYY
-      const month = String(nextDate.getMonth() + 1).padStart(2, '0'); // Ensure 2 digits
-      const day = String(nextDate.getDate()).padStart(2, '0'); // Ensure 2 digits
+      const month = String(nextDate.getMonth() + 1).padStart(2, '0'); 
+      const day = String(nextDate.getDate()).padStart(2, '0');
       const year = nextDate.getFullYear();
 
       const formattedDate = `${month}/${day}/${year}`;
@@ -58,15 +63,12 @@ export default function AppointmentForm() {
     return dates;
   };
 
-  // Generate date options
   const availableDates = getNext7Days();
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      // Add form data to Firestore
       const docRef = await addDoc(collection(firestore, 'appointments'), {
         name,
         email,
@@ -81,7 +83,6 @@ export default function AppointmentForm() {
       console.error('Error adding document: ', e);
     }
 
-    // Clear form fields
     setName('');
     setEmail('');
     setDate('');
@@ -91,9 +92,10 @@ export default function AppointmentForm() {
 
   return (
     <>
-      <Header /> {/* Add Header at the top */}
+      <Header />
 
-      <div className="mx-4 sm:mx-10 md:mx-14 mt-10 mb-20 border-2 border-blue-400 pt-4 rounded-lg">
+      {/* Form container with ref */}
+      <div ref={formRef} className="mx-4 sm:mx-10 md:mx-14 mt-10 mb-20 border-2 border-blue-400 pt-4 rounded-lg">
         <div className="mt-10 text-center font-bold">Contact Us</div>
         <div className="mt-3 text-center text-4xl font-bold">Make an Appointment</div>
         <form onSubmit={handleSubmit} className="p-8">
@@ -121,7 +123,6 @@ export default function AppointmentForm() {
           </div>
 
           <div className="my-6 flex gap-4">
-            {/* Dropdown for selecting a date */}
             <select
               name="date"
               id="date"
@@ -141,7 +142,6 @@ export default function AppointmentForm() {
               ))}
             </select>
 
-            {/* Dropdown for selecting a time */}
             <select
               name="time"
               id="time"
